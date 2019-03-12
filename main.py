@@ -92,11 +92,11 @@ def gitConnect():
         subprocess.run('git push --force -u origin master')
 
 def main():
-    # cloneUrlList = getCloneUrls()
-    # cloneGits(cloneUrlList)
-    # readmeList = getReadmes()
-    # reqReadingList = getReqReading(readmeList)
-    # reqReadingFile(reqReadingList)
+    cloneUrlList = getCloneUrls()
+    cloneGits(cloneUrlList)
+    readmeList = getReadmes()
+    reqReadingList = getReqReading(readmeList)
+    reqReadingFile(reqReadingList)
     gitConnect()
 
 if __name__ == '__main__':
