@@ -70,6 +70,7 @@ def reqReadingFile(reqReadingList):
     file.write("# Required Reading\n> Python Elective I Spring 2019\n\n")
     # lowercase every line and then capitalize the first letter
     sortedList = list(reqReadingSet)
+    print(sorted(sortedList))
     for line in sorted(sortedList):
         lowerLine = line.lower()
         capLine = lowerLine.lower().replace(lowerLine[3], lowerLine[3].capitalize(), 1)
