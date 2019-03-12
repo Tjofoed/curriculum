@@ -4,7 +4,7 @@ import git
 def getCloneUrls():
     cloneUrlList = []
     # get sourcecode from api
-    response = urllib.request.urlopen('https://api.github.com/orgs/python-elective-1-spring-2019/repos?per_page=100')
+    response = urllib.request.urlopen('https://api.github.com/orgs/python-elective-2-spring-2019/repos?per_page=100')
     # decode into utf-8
     html = response.read().decode('utf-8')
     file = open('urls.txt', 'w+')
